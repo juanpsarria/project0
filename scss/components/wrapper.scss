@@ -1,6 +1,8 @@
+@import "../base/variables";
+
 .wrapper {
     width: 100%;
     height: 100vh;
     display: block;
-    background-color: #202124;
+    background-color: $first-color;
 }

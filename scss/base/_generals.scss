@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
+@import "./variables";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    color:#E8EAED;
+    color:$second-color;
 }

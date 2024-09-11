@@ -1,12 +1,11 @@
+@import "../base/variables";
+@import "../base/mixins";
 
-.img_navbar{
+.img-navbar{
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: right;
+    @include flex (flex, wrap, center, right);
     a {
         text-decoration: none;
         font-size: 14px;
@@ -16,12 +15,9 @@
         }
     }
 }
-.main_section {
-    display: flex;
-    flex-wrap: wrap;
+.main-section {
+    @include flex (flex, wrap, center, space-evenly);
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 10px;
     img {
         height: 92px;
@@ -30,10 +26,8 @@
     }
     form {
         width: 100%;
-        display: flex;
+        @include flex (flex, wrap, center, center);
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         .search {
             width: 40%;
             border: 1px solid rgb(118, 118, 118);
@@ -41,17 +35,17 @@
             padding: 10px;
             margin: 20px;
             overflow-x: hidden;
-            background-color: #202124;
+            background-color: $first-color;
             font-size: 16px;
             &:hover {
-                border: 2px solid #202124;
-                background-color: #303134;
+                border: 2px solid $first-color;
+                background-color: $third-color;
             }
         }
 
         .btn {
-            background-color: #303134;
-            border: 1px solid #303134;
+            background-color: $third-color;
+            border: 1px solid $third-color;
             border-radius: 4px;
             font-size: 14px;
             margin: 11px 4px;

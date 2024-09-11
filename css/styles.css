@@ -19,8 +19,9 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
     justify-content: right;
+    flex-direction: row;
     margin: 10px; }
     .navbar ul li a {
       text-decoration: none;
@@ -29,24 +30,25 @@
       .navbar ul li a:hover {
         text-decoration: underline; }
 
-.main_section {
+.main-section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: row;
   padding: 10px; }
-  .main_section img {
+  .main-section img {
     height: 92px;
     width: 272px;
     margin: 10px; }
-  .main_section form {
+  .main-section form {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center; }
-    .main_section form .search {
+    justify-content: center;
+    flex-direction: column; }
+    .main-section form .search {
       width: 40%;
       border: 1px solid #767676;
       border-radius: 25px;
@@ -55,12 +57,12 @@
       overflow-x: hidden;
       background-color: #202124;
       font-size: 16px; }
-      .main_section form .search:hover {
+      .main-section form .search:hover {
         border: 2px solid #202124;
         background-color: #303134; }
-    .main_section form div {
+    .main-section form div {
       margin: 10px; }
-      .main_section form div .btn {
+      .main-section form div .btn {
         background-color: #303134;
         border: 1px solid #303134;
         border-radius: 4px;
@@ -73,10 +75,10 @@
         text-align: center;
         cursor: pointer;
         user-select: none; }
-        .main_section form div .btn:hover {
+        .main-section form div .btn:hover {
           border: solid 1px #B0B3B8; }
 
-.adv_navbar {
+.adv-navbar {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -84,56 +86,57 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between; }
-  .adv_navbar img {
+  .adv-navbar img {
     height: 25px;
     width: 75px; }
-  .adv_navbar a {
+  .adv-navbar a {
     text-decoration: none;
     font-size: 14px;
     margin: 10px; }
-    .adv_navbar a:hover {
+    .adv-navbar a:hover {
       text-decoration: underline; }
 
-.adv_section {
+.adv-section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%; }
-  .adv_section #h1_cont {
+  .adv-section #h1-cont {
     border-bottom: 1px solid black;
     margin-bottom: 10px; }
-    .adv_section #h1_cont h1 {
+    .adv-section #h1-cont h1 {
       color: #f28b82;
       font-size: 20px;
       font-weight: normal;
       margin: 15px 50px; }
-  .adv_section form {
+  .adv-section form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 30px;
     align-items: start;
     width: 80%; }
-    .adv_section form div {
+    .adv-section form div {
       display: flex;
-      justify-content: left;
+      flex-wrap: wrap;
       align-items: center;
+      justify-content: left;
       margin: 0px 5px 0px 20px;
       width: 100%; }
-      .adv_section form div:last-child {
+      .adv-section form div:last-child {
         width: 68%;
         justify-content: right; }
-      .adv_section form div span {
+      .adv-section form div span {
         font-size: 16px;
-        color: #e8eaed;
+        color: #E8EAED;
         margin: 15px 0px; }
-      .adv_section form div label, .adv_section form div #empty_div {
+      .adv-section form div label, .adv-section form div #empty-div {
         min-width: 167px;
         width: 16%;
         color: #969ba1;
         font-size: 13px;
         margin: 15px 10px 15px 0px; }
-      .adv_section form div input {
+      .adv-section form div input {
         width: 50%;
         background: #202124;
         border: 1px solid #5f6368;
@@ -141,7 +144,7 @@
         font-size: 13px;
         height: 30px;
         padding: 1px 8px; }
-    .adv_section form #adv_btn {
+    .adv-section form #adv-btn {
       background: #8ab4f8;
       border-color: #8ab4f8;
       border-radius: 5px;
@@ -154,11 +157,11 @@
       width: 150px;
       min-width: 54px;
       margin: 10px; }
-      .adv_section form #adv_btn:hover {
+      .adv-section form #adv-btn:hover {
         background-color: #aecbfa;
         border: 1px solid #3079ed; }
 
-.img_navbar {
+.img-navbar {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -166,31 +169,32 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: right; }
-  .img_navbar a {
+  .img-navbar a {
     text-decoration: none;
     font-size: 14px;
     margin: 10px; }
-    .img_navbar a:hover {
+    .img-navbar a:hover {
       text-decoration: underline; }
 
-.main_section {
+.main-section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: row;
   padding: 10px; }
-  .main_section img {
+  .main-section img {
     height: 92px;
     width: 272px;
     margin: 10px; }
-  .main_section form {
+  .main-section form {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center; }
-    .main_section form .search {
+    justify-content: center;
+    flex-direction: column; }
+    .main-section form .search {
       width: 40%;
       border: 1px solid #767676;
       border-radius: 25px;
@@ -199,10 +203,10 @@
       overflow-x: hidden;
       background-color: #202124;
       font-size: 16px; }
-      .main_section form .search:hover {
+      .main-section form .search:hover {
         border: 2px solid #202124;
         background-color: #303134; }
-    .main_section form .btn {
+    .main-section form .btn {
       background-color: #303134;
       border: 1px solid #303134;
       border-radius: 4px;
@@ -215,5 +219,5 @@
       text-align: center;
       cursor: pointer;
       user-select: none; }
-      .main_section form .btn:hover {
+      .main-section form .btn:hover {
         border: solid 1px #B0B3B8; }
